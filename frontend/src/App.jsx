@@ -1,7 +1,11 @@
+import Navbar from "./components/Navbar";
+import Dashboard from "./pages/Dashboard";
+
 function App() {
   return (
     <>
-      <h1 className="font-chivo">Hello world</h1>
+      <Navbar/>
+      <Dashboard/>
     </>
   );
 }
