@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ThemeController from "./ThemeController";
 
 function Navbar() {
@@ -5,7 +6,9 @@ function Navbar() {
     <div className="navbar h-[5vh] bg-base-100 shadow-sm">
       <div className="flex-1">
         <ThemeController />
-        <a className="btn btn-ghost text-2xl font-chivo">Intern Portal</a>
+        <Link to={"/"} className="btn btn-ghost text-2xl font-chivo">
+          Intern Portal
+        </Link>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">

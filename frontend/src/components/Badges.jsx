@@ -24,8 +24,11 @@ function Badges() {
         </div>
         <div className="flex p-3 rounded-field">
           {BADGES.map((badgeColor, i) => (
-            <div className="bg-base-300 hover:shadow hover:cursor-pointer rounded-full p-1 mx-1">
-              <Award key={i} color={badgeColor} size={42} />
+            <div
+              key={i}
+              className="bg-base-300 hover:shadow hover:cursor-pointer rounded-full p-1 mx-1"
+            >
+              <Award color={badgeColor} size={42} />
             </div>
           ))}
         </div>
